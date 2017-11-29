@@ -28,7 +28,7 @@ public class EnvController {
     @GetMapping("/env")
     public Map<String,String> getEnv(){
 
-        Map<String, String> envMap = new HashMap<>();
+        Map<String, String> envMap = new HashMap <String,String>();
 
         envMap.put("PORT", port);
         envMap.put("MEMORY_LIMIT", memoryLimit);
