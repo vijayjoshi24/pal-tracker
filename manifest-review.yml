@@ -4,3 +4,5 @@ applications:
   path: build/libs/pal-tracker.jar
   random-route: true
   host: vj-pal-tracker-review
+  services:
+  - tracker-database
