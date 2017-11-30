@@ -40,6 +40,7 @@ public class TimeEntryApiTest {
 
         JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource);
         jdbcTemplate.execute("TRUNCATE time_entries");
+        this.restTemplate = restTemplate.withBasicAuth("user","password");
     }
 
     @Test
